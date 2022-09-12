@@ -1,5 +1,5 @@
 # EasyCompile
-EasyCompile est un script écrit en bash dont le but est de faciliter la compilation des programmes C en suivant les normes de compilation données par Monsieur Nollet.
+EasyCompile est un script écrit en bash dont le but est de faciliter la compilation des programmes C en suivant les normes de compilation données par Monsieur Nollet sans ce prendre la tête à recopier tout les flags (Apprenez les quand même).
 
 # Comment l'installer ? 
 L'utilisation de EasyCompile est assez facile, il suffit de télécharger le fichier "easycompile.sh". Une fois que c'est bon, vous devriez éxécuter la commande `chmod u+x easycompile.sh` dans le même répértoire du fichier afin de rendre votre script éxécutable.
