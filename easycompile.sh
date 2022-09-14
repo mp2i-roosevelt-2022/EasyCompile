@@ -16,12 +16,23 @@ if [[ $fileName == *.c ]]
 
 if ! [[ -f "$fileName.c" ]]
     then
-        echo "Ce fichier existe pas dans votre répértoire."
+        echo "Ce fichier n'existe pas dans votre répértoire."
         exit 
     fi
 
 gcc -Wall -Wextra -std=c99 -Wpedantic -g -fsanitize=address,undefined \
 $fileName.c -o $fileName
 
-echo "Compilation terminée, pour lancer le programme \
+if ! [ $? -eq 0 ]
+    then
+        echo -e "\e[31m" # permet d afficher le texte en rouge
+        echo -e "Echec de la compilation"
+        exit
+    fi
+
+echo -e "\e[32m"
+echo -e "Compilation terminée, pour lancer le programme \
 taper \"./$fileName\" dans votre terminal."
+
+
+echo -e "\e[0m"
