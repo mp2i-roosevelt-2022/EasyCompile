@@ -13,4 +13,3 @@ C'est la partie la moins compliquée, il va juste falloir d'éxécuter la comman
 
 Qu'attendez vous ? À vos claviers ! 
 
-Script codé par Tir Omar.
